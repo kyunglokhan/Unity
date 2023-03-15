@@ -27,6 +27,7 @@ public class TowerBuildingMgr : MonoBehaviour
                 switch (hit.collider.gameObject.tag)
                 {
                     case "Block":
+                        Debug.Log("ºí·Ï");
                         GameObject tower = Instantiate(towerPrefab);
                         tower.transform.position = hit.collider.transform.position
                             + new Vector3(0,hit.collider.transform.localScale.y,0);
