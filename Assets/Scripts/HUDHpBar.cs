@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class HUDHpBar : MonoBehaviour
 {
@@ -41,6 +42,9 @@ public class HUDHpBar : MonoBehaviour
         if (hpBar != null)
         {
             hpBar.localPosition = canvasPos;
+           /* hpBar.GetComponent<Slider>().value =
+                (float)transform.parent.GetComponent
+                <EnemyController>().enemyHp / maxHp;*/
             hpBar.GetComponent<Slider>().value =
                 (float)transform.parent.GetComponent
                 <EnemyController>().enemyHp / maxHp;
