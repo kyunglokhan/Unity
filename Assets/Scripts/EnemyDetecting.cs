@@ -10,10 +10,7 @@ public class EnemyDetecting : MonoBehaviour
     {
         towerController = transform.parent.GetComponent<TowerController>();
     }
-    void Update()
-    {
-        
-    }
+
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("Enemy"))

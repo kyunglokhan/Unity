@@ -9,14 +9,8 @@ public class UpgradeTargetCam : MonoBehaviour
     public Transform targetTf;
     public Camera mainCam;
 
-
     void Start()
     {
         popUp = GameObject.Find("UpGradePopUp");
-    }
-
-    void Update()
-    {
-        
     }
 }

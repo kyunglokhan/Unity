@@ -35,7 +35,5 @@ public class GameMgr : MonoBehaviour
         {
             nextBtn.SetActive(false);
         }
-
-
     }
 }

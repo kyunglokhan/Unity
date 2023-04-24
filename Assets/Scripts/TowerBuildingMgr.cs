@@ -8,12 +8,7 @@ public class TowerBuildingMgr : MonoBehaviour
     public GameObject upgradePanel;
     public UpgradeManager upgradeManager;
 
-    void Start()
-    {
-        
-    }
-
-    void Update()
+     void Update()
     {
         if (upgradePanel.activeSelf == true)
             return;
@@ -37,14 +32,13 @@ public class TowerBuildingMgr : MonoBehaviour
                     case "Tower":
                         upgradePanel.SetActive(true);
                         upgradeManager.upgradeTarget = hit.collider.gameObject;
-                        hit.collider.transform.GetChild(1).GetComponent<MeshRenderer>().enabled = true;
+                        hit.collider.transform.GetChild(1).GetComponent<MeshRenderer>().
+                            enabled = true;
 
                         break;
                     default:
                         break;
                 }
-
-
             }
         }
     }

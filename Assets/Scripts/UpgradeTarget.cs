@@ -8,15 +8,8 @@ public class UpgradeTarget : MonoBehaviour
     public GameObject popUp;
     public Transform targetTf;
 
-
     void Start()
     {
-        
         popUp = GameObject.Find("UpGradePopUp");
-    }
-
-    void Update()
-    {
-        
     }
 }

@@ -29,6 +29,4 @@ public class UIManager : MonoBehaviour
             objs[i].GetComponent<MeshRenderer>().enabled = false;
         }
     }
-
-
 }

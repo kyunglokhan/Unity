@@ -14,10 +14,8 @@ public class UpgradeManager : MonoBehaviour
     public void AspUp()
     {
         if (upgradeTarget.GetComponent<TowerController>().attackSpeed > 0.25f)
-
         {
             upgradeTarget.GetComponent<TowerController>().attackSpeed -= 0.1f;
-
         }
     }
 
@@ -26,9 +24,6 @@ public class UpgradeManager : MonoBehaviour
         if (upgradeTarget.transform.GetChild(1).transform.localScale.x < 9)
         {
             upgradeTarget.transform.GetChild(1).transform.localScale += new Vector3(1, 0, 1);
-
         }
     }
-
-
 }

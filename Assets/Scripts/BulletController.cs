@@ -7,12 +7,7 @@ public class BulletController : MonoBehaviour
     public float bulletSpeed = 10f;
     public GameObject target;
     public int bulletDamage = 1;
-
-    void Start()
-    {
-        
-    }
-
+ 
     void Update()
     {
         if (target != null)
@@ -36,7 +31,4 @@ public class BulletController : MonoBehaviour
             Destroy(gameObject);
         }
     }
-
-
-
 }

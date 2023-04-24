@@ -38,7 +38,6 @@ public class TowerController : MonoBehaviour
                     targetEnemy = enemyDetecting.enemies[0];
                     towerState = TOWERSTATE.ATTACK;
                 }
-
                 break;
             
             case TOWERSTATE.ATTACK:
@@ -64,25 +63,16 @@ public class TowerController : MonoBehaviour
                     attackCurTime = 0;
                     towerState = TOWERSTATE.IDLE;
                 }
-
-
                 break;
             
             case TOWERSTATE.UPGRADING:
-                
                 break;
             
             case TOWERSTATE.NONE:
-                
                 break;
             
             default:
                 break;
         }
-
-
-
-
-
     }
 }

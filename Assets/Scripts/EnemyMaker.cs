@@ -12,7 +12,6 @@ public class EnemyMaker : MonoBehaviour
     public GameMgr gameMgr;
     public bool isRunning = false;
 
-
     void Start()
     {
         gameMgr = GameObject.Find("GameMgr").GetComponent<GameMgr>();
